@@ -1,0 +1,118 @@
+.cards-img-list {
+  display: flex;
+  gap: 20px; /* Відстань між картками */
+  list-style: none;
+  padding: 0;
+  margin: 30px auto;
+}
+
+.cards-img-list-item {
+  /* Можеш тут ще додати стилі для вирівнювання, якщо треба */
+}
+
+.cards-image {
+  border-radius: 8px;
+  border: 1px solid gray; /* Білий суцільний бордер */
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.cards-title {
+  color: #e52629;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.cards-text {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 1px; /* Товщина лінії */
+  width: 100%;
+  background-color: #ffffff; /* Білий колір */
+}
+
+.cards-list-item {
+  position: relative;
+  padding-left: 20px; /* Додаємо місце для маркера */
+}
+
+.cards-list-item-text {
+  line-height: 1.5;
+}
+
+.cards-list-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px; /* Розмір маркера */
+  height: 8px;
+  background-color: #e52629; /* Червоний маркер */
+  border-radius: 50%; /* Робимо його круглим */
+}
+
+.cards-title-wrapper {
+  position: relative;
+  text-align: center; /* Центрує заголовок */
+  margin-bottom: 25px; /* Можна змінити відступ, якщо треба */
+}
+
+.cards-title {
+  margin: 0;
+}
+
+.anchor-button {
+  position: absolute;
+  top: 127px; /* Підняти догори */
+  right: 5px; /* Відступ від правого краю вьюпорта */
+  transform: translateY(-50%); /* Трохи підняти, щоб краще виглядало */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #e52629;
+  opacity: 0.6;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.anchor-button::before {
+  content: '';
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(135deg);
+  width: 14px;
+  height: 14px;
+  border-top: 4px solid white; /* Товщина лінії стрілки */
+  border-right: 4px solid white; /* Товщина лінії стрілки */
+}
+
+.anchor-button:hover,
+.anchor-button:active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.cards-flex {
+  margin-bottom: 30px;
+}

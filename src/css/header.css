@@ -1,0 +1,188 @@
+/* //todo ==================== mobile ====================  */
+/* #region mobile */
+
+/* //? burger  */
+.burget-btn {
+  background-color: transparent;
+  border: 0;
+  line-height: 0;
+}
+/* //? main menu hidden  */
+@media only screen and (max-width: 1200px) {
+  .kontakt-btn,
+  .header-list {
+    display: none;
+  }
+}
+
+.header-container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+/* #endregion mobile */
+
+/* //todo ==================== tablet ====================  */
+/* #region tablet */
+/* #endregion tablet */
+
+/* //todo ==================== desktop ====================  */
+/* #region desktop */
+
+/* //? burget-btn hidden  */
+@media only screen and (min-width: 1200px) {
+  .burget-btn {
+    display: none;
+  }
+
+  /* //? kontakt-btn  */
+  /* #region kontakt-btn */
+
+  /* //? show it  */
+  .kontakt-btn,
+  .header-list {
+    display: block; /* або flex — залежно від твого дизайну */
+  }
+
+  /* //? main  */
+  .kontakt-btn {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column; /* Елементи один під одним */
+    justify-content: center;
+    background-color: #c00e19;
+    padding: 12px 25px 8px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: background 0.3s ease, transform 0.3s ease;
+    gap: 5px;
+  }
+
+  /* //? text uppercase  */
+  .kontakt-btn-text {
+    text-transform: uppercase;
+  }
+
+  /* //? markup  */
+  .kontakt-btn-top {
+    display: flex;
+    align-items: center; /* Іконка і текст по центру вертикалі */
+    gap: 8px; /* Відстань між іконкою і текстом */
+  }
+
+  /* //? hover color  */
+  .kontakt-btn:hover {
+    background-color: #a40b14;
+    transition: background-color 0.3s ease;
+  }
+  /* //? wapp icon grow  */
+  .kontakt-btn:hover .kontakt-btn-icon {
+    transform: translate(-6px, 9px) scale(1.5);
+    /* transform: scale(1.4); */
+    transition: transform 0.3s ease; /* Плавне збільшення */
+  }
+
+  .kontakt-btn .kontakt-btn-icon {
+    transition: transform 0.3s ease; /* Плавне зменшення */
+  }
+
+  /* #endregion kontakt-btn */
+  /* #region header-list */
+  .header-nav {
+    display: flex; /* Увімкнути флекс-контейнер */
+    align-items: center; /* Вирівнювати по центру вертикально */
+    /* justify-content: space-between; */
+    gap: 48px;
+  }
+
+  .header-list {
+    display: flex; /* В один рядок */
+    gap: 30px;
+    text-transform: uppercase; /* ВСІ ЛІТЕРИ ВЕЛИКІ */
+  }
+
+  .header-container {
+    margin: 30px auto;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+  }
+
+  .header-list-item a.active {
+    color: #f4384f; /* Колір для активного посилання */
+  }
+
+  .header-list-item a:hover {
+    color: #f4384f; /* Колір при наведенні */
+  }
+
+  /* Зміна кольору активного елемента при ховері на інший */
+  .header-list-item a:hover.active {
+    color: #fff; /* Активний елемент стає білим при ховері на інший елемент */
+  }
+
+  /* //? active page  */
+  .header-list-item a {
+    color: #fff;
+    text-decoration: none; /* Без підкреслення */
+    transition: color 0.3s ease; /* Плавний перехід для кольору */
+  }
+  /* #endregion header-list */
+}
+
+/* #endregion desktop */
+
+/* //! old */
+/*
+
+.header {
+  padding: 20px 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+}
+.nav-link {
+  position: relative;
+  display: block;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: 200ms ease-in;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #747bff;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  width: 110%;
+  height: 4px;
+  border-radius: 4px;
+  transform-origin: center;
+  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+}
+.nav-link.active::after {
+  background: #747bff;
+}
+*/

@@ -1,0 +1,110 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pomożemy-btn {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column; /* Елементи один під одним */
+  justify-content: center;
+  background-color: #c00e19;
+  padding: 12px 25px 8px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  transition: background 0.3s ease, transform 0.3s ease;
+  gap: 5px;
+}
+
+.pomożemy-btn:hover {
+  background-color: #a40b14;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column; /* Елементи один під одним */
+  justify-content: center;
+
+  margin: 10px auto 30px; /* вирівнює саму кнопку по центру */
+
+  text-align: center; /* для вирівнювання тексту всередині */
+  /* width: auto; */
+  background-color: #c00e19;
+  padding: 12px 25px 8px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  transition: background 0.3s ease, transform 0.3s ease;
+  gap: 5px;
+}
+
+/* //? text uppercase  */
+.hero-btn-text {
+  text-transform: uppercase;
+}
+
+/* //? markup  */
+.hero-btn-top {
+  display: flex;
+  align-items: center; /* Іконка і текст по центру вертикалі */
+  gap: 8px; /* Відстань між іконкою і текстом */
+}
+
+/* //? ховаю кнопку на десктопі */
+@media (min-width: 1280px) {
+  .hero-btn {
+    display: none;
+  }
+}
+
+.hero-title {
+  position: relative; /* обов'язково для ::after */
+  font-family: 'Gloria Hallelujah';
+  font-style: normal;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.hero-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -7px; /* трошки нижче тексту */
+  transform: translateX(-50%); /* щоб лінія була по центру */
+  width: 97%; /* ширина підкреслення */
+  height: 2px; /* товщина лінії */
+  background-color: #fff; /* колір лінії */
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    display: block;
+  }
+  .hero-text::after {
+    content: '\A na razie! "';
+    white-space: pre;
+  }
+}
+
+.hero-text,
+.pomożemy-btn {
+  margin-bottom: 30px;
+}
