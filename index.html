@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./big-fish-star.png" />
+    <title>
+      Big Fish - Drukarnia online - szybkie i tanie drukowanie materiałów
+      reklamowych!
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" crossorigin src="/test--public/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/test--public/assets/index-BXE3J9bV.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="header-nav">
+      <!-- logo -->
+      <a href="./index.html" class="header-logo-link">
+        <img
+          src="/test--public/assets/big-fish-logo-header-CDSxN5jH.png"
+          alt="Big Fish Logo"
+          width="450"
+          class="header-logo"
+        />
+      </a>
+      <!-- menu -->
+      <ul class="header-list">
+        <li class="header-list-item">
+          <a href="../index.html" class="active">główna</a>
+        </li>
+        <li class="header-list-item">
+          <a href="../html/about.html">o nas</a>
+        </li>
+        <li class="header-list-item">
+          <a href="../html/oferta.html">oferta</a>
+        </li>
+        <li class="header-list-item">
+          <a href="">cennik</a>
+        </li>
+        <li class="header-list-item">
+          <a href="../html/contacts.html">kontakt</a>
+        </li>
+      </ul>
+      <!-- kontakt -->
+      <a class="kontakt-btn" target="_self" href="https://wa.me/48574665774">
+        <div class="kontakt-btn-top">
+          <img
+            src="/test--public/assets/wapp-kont-btn-logo-DVvLu_W3.png"
+            alt="whattsapp icon"
+            width="16"
+            height="16"
+            class="kontakt-btn-icon"
+          />
+          <span class="kontakt-btn-text">szybki kontakt</span>
+        </div>
+        <span class="kontakt-btn-tel">+4857 46-65-774</span>
+      </a>
+    </nav>
+
+    <!-- burger -->
+    <button
+      class="burget-btn js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      type="button"
+    >
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK8AAABrCAMAAAA2NSLlAAAACXBIWXMAAAsSAAALEgHS3X78AAAAHlBMVEVHcEz////////////////////////////////////JATChAAAACXRSTlMAFTBCaYKnwuobmjQYAAADaElEQVR42u3bC5LqIBCF4W76efa/4ZsxODFqvDp5QZXfCv5KAQmgdAwWEaZGsFzZVVwlbqTr3tFypVb5lPIXXrbJqikVdmS0DmvgUE5raOJoRivgBEJ/5zhe0grqeCEjzFQGi8vYfOHIPR9wVdQ85pF+qVy5JqsNIredcpMiA9qeBO4ktU0Sc4XaxoEZocZx4pZR60pnvWSd9XJiEtQ+7ayXO+ul6KzXOusV/MrOekEdsL56JXvqlQC66RVPoIteFrXAI2ktU9QsAlVrvTxt1yISk3N7eXaY5ivO0XSfJItRYmO2ycSI7OIQjdUDxwp6m5jMax0n+OgtnkITxxnks69mZ7oybCmjcrvh8fmEkwsuiR9xE5x/CbKRyojpNdZcPpKSQBQalPqeCfyyx2AS8whcxVLROuxLK7BhkIUMz0QZ05yOFriRfHeUkmx4KjjwQ+lgfJdxN+GdYiGY/JxNlM8zCl0EwgIDZjynHKc8YMWc6+/E8EtP4qlkOWVXLQs5XogTSEk8ZxQYMB2LsUTJ8EKSnvLVjCXJjFdYMLBmemEUqMIsMXIhcQy0td4gw0ipFPIxV0PrF09rvUmCC6cCGCUG7IASJ6p2eqfFtxADEAMQVIAgihZ7pS6+JOJAan2vZcBO6y34/4QThzvMMGDLQJY8q1fe6PWS4DpmnSiyGK60od6guEYJsc/Xs0oa6nUCkAkgPRJPcUO9KgBU8UJSO71OXpexZU4HMyzI+lYQxQt66qV3FWEqUtgxEMEzaWcMX47HDpk2di96tZwwHCRxJ/h+nBDjCS95+GqmgaXcaWMXREVtFL9szA06SlFPPJKHmSgvpmky7U/ELN46ohTP1Bfb1Cy79H1wL6D0NjFlWqPIxap7AaFNlacXA9jOFonmtWl/SauweuJIQSuIo+qhlx3oqLckTuBrTjm7er66xzVL5Ysrc+w/2/K26KNbDRHzWN87EbUIVHFxm8W0Adaef5KY1IHEhDoQHfcytc8wkW/vt/fb++3tuNc7682+egVdvd84cKP9XEdP37/az1/Kiqgn5qSZtsF05IYFeXKd17h3WYt1y5Jpczyv25RsVKh13CV25RukWmDSeK46jpNK65TAgZxppcRhXJmo1d67M0sVpuqM8ZBRWaUyKrQ7fvizSCzVCNPXu/4B3dPGyQdpj0kAAAAASUVORK5CYII="
+        alt="Big Fish Logo"
+        width="100"
+        class="burger-img"
+      />
+    </button>
+  </div>
+</header>
+
+    
+
+    <main>
+      <section class="hero container">
+  <div class="hero-content">
+    <a class="hero-btn" target="_self" href="https://wa.me/48574665774">
+      <div class="hero-btn-top">
+        <img
+          src="/test--public/assets/wapp-kont-btn-logo-DVvLu_W3.png"
+          alt="whattsapp icon"
+          width="16"
+          height="16"
+          class="kontakt-btn-icon"
+        />
+        <span class="hero-btn-text">szybki kontakt</span>
+      </div>
+      <span class="kontakt-btn-tel">+4857 46-65-774</span>
+    </a>
+    <h1 class="hero-title">Reklamowa drukarnia</h1>
+    <p class="hero-text">" Drukujemy wszystko, oprócz pieniędzy …</p>
+    <a class="pomożemy-btn" target="_self" href="https://wa.me/48574665774">
+      <span class="kontakt-btn-text">Nie masz projektu? Pomożemy!</span>
+    </a>
+  </div>
+  <img src="/test--public/assets/hero-img-DNlfTjfQ.png" alt="clients from hell" width="315px" />
+</section>
+
+      <section class="advantages container">
+  <h2 class="adv-title">Our advantages</h2>
+  <div class="adv-content">
+    <ul class="adv-list">
+      <li class="adv-list-item">
+        <img
+          src="/test--public/assets/advant-approach-syN8RZax.png"
+          alt="Kompleksowe podejście"
+          class="adv-icon"
+          width="220px"
+        />
+        <h3 class="adv-list-item-title">Kompleksowe podejście do reklamy</h3>
+        <p class="adv-list-item-text">
+          Zajmujemy się wszystkim - od projektu graficznego po druk i doradztwo
+          w zakresie marketingu.
+        </p>
+      </li>
+      <li class="adv-list-item">
+        <img
+          src="/test--public/assets/flagua-BSiDmiat.png"
+          alt="Ukrainian flag"
+          class="adv-icon"
+          width="220px"
+        />
+        <h3 class="adv-list-item-title">Говоримо Українською</h3>
+        <p class="adv-list-item-text">
+          Posiadamy własnych projektantów i specjalistów ds. marketingu, którzy
+          wiedzą, jak stworzyć skuteczne rozwiązania.
+        </p>
+      </li>
+      <li class="adv-list-item">
+        <img
+          src="/test--public/assets/advant-termin-DyMBsvMx.png"
+          alt="Terminy realizacji"
+          class="adv-icon"
+          width="220px"
+        />
+        <h3 class="adv-list-item-title">Szybkie terminy realizacji</h3>
+        <p class="adv-list-item-text">
+          Gwarantujemy krótkie czasy wykonania, nie tracąc przy tym na jakości.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="cards container">
+  <div class="cards-flex">
+    <div class="cards-images">
+      <ul class="cards-img-list">
+        <li class="cards-img-list-item">
+          <img
+            src="/test--public/assets/card-1-vivat-GtHZnzXD.jpg"
+            alt="business card vivat"
+            class="cards-image"
+          />
+        </li>
+        <li class="cards-img-list-item">
+          <img
+            src="/test--public/assets/card-2-keratime-DLWZjxEj.jpg"
+            alt="business card keratime"
+            class="cards-image"
+          />
+        </li>
+      </ul>
+    </div>
+    <div class="cards-content">
+      <div class="cards-title-wrapper">
+        <h2 class="cards-title">Wizytówki Laminowane</h2>
+        <a href="#services" class="anchor-button"></a>
+      </div>
+      <p class="cards-text">
+        <span class="underline">Wizytówki 90x50mm</span> (85x55) 350g Foliowanie
+      </p>
+      <ul class="cards-list">
+        <li class="cards-list-item">
+          <p class="cards-list-item-text">SoftTouch 2 strony</p>
+        </li>
+        <li class="cards-list-item">
+          <p class="cards-list-item-text">Dostawa gratis</p>
+        </li>
+        <li class="cards-list-item">
+          <p class="cards-list-item-text">Terminy realizacji 2-3 dni</p>
+        </li>
+      </ul>
+      <a class="kontakt-btn" target="_self" href="https://wa.me/48574665774">
+        <span class="kontakt-btn-text">Nie masz projektu? Pomożemy!</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+      <section class="serv-nav container">
+  <div class="serv-nav-main">
+    <h2 class="serv-nav-main-title">Nasze usługi</h2>
+    <ul class="serv-nav-list">
+      <li class="serv-nav-list-item">
+        <a
+          href="#"
+          class="serv-nav-item-anchor"
+          data-img="/img/services-nav/modal/uslugi-1.png"
+        >
+          <img
+            src="/test--public/assets/usl-1-BtmfBVAs.png"
+            alt="Druk offsetowy"
+            class="serv-nav-png"
+            width="128px"
+          />
+          <h3 class="serv-nav-item-title">Druk offsetowy</h3>
+        </a>
+      </li>
+
+      <li class="serv-nav-list-item">
+        <a
+          href="#"
+          class="serv-nav-item-anchor"
+          data-img="/img/services-nav/modal/uslugi-2.png"
+        >
+          <img
+            src="data:image/png;base64,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"
+            alt="Projektowanie graficzne"
+            class="serv-nav-png"
+            width="128px"
+          />
+          <h3 class="serv-nav-item-title">Projektowanie graficzne</h3>
+        </a>
+      </li>
+
+      <li class="serv-nav-list-item">
+        <a
+          href="#"
+          class="serv-nav-item-anchor"
+          data-img="/img/services-nav/modal/uslugi-3.png"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAAPFBMVEVHcEz///////////////////////////////////////////////////////////////////////////+PybD1AAAAE3RSTlMABAwXJjZHW2p0gZWqt8DN3Or1qsehJQAADvVJREFUeNrs2NGO4zYQRNG6Rf3/H6srtolwkzGSHYxaD8byUIYBPghUudWirG3btm3btm3btm3btm3btu0Pgu4B9hgDdFGd51lVuot1j0gT18anVgDGYwxbV9XNJXDoFraHh91XovVRARjGGEYNzK0JDN3AjDGOgVogdJ/jtg7g1kadoHxKAIgB6mMpD5/zGASMGpkP2wfwGp2QPqkCXqNVEt3i+G7TRRLRU6R3desGK1KiJ5CIfiT5RgAA6N9C0Awm8+B9gaUbkXX9Fj/PsH4bgMFCb5CZUSSK3kRUdJtIEzb6mSgh9T89AI9jPBxP49eYk2O8JsecOH6NOTs8jJbck4Gxx1ret8fDeBz2c+H+rwowBgMIBSnMIUUAK0dFQgpSmF9xnVRlrTWoHxjbUgjStz8SUWSlUlG9BbDCNYCEQkTmEEFizqJozUbzeCg4pcotBRBNwPCB1gr0zW9CpCiVs6R6DwBsz/dXofDeBdcTAinWF3EVJ1TNBUdBfZK1wRom6AdmBsUpKfkSgMHDY1gv/ObRiL5CnvOJIiXd1/8CNgj9BGKtPBVN1hN4HFfe31YLhb8roFGe9IABXTIbIWiaAeA5bXQBjMNGUlRK1GZdv8DocgIeNpr8+sB4QNeAn+h+d4uiCYyusg8P26wAMMPDug4DKN23QK2NIKCrzLANKwCwh1EHsEhzBSSVt236xT5gA5oB+Ak1CJj2W0A1z2cQ6oA9YFUAtlEHZEBRRemtgAjAbQHYWgEMg3qAAVWS9h4ANuqB/3kLgKH3z7DWLhAltTpAD15WAKi3AhRVVVq3QYAR3QEckhCoiWWQlBQyapBUamXbBYFWAI3AOEmdoA6pytpmoTbAegq0Jgs2SqoqTdefrG1gH9DaCjef2IZUnU0BzBPhh+ZbgPU2iNoEG0hVUuloAGclwmBQm6AVAKgPsocl1UtDAVQS1u/fXwHdjMGaxZvokko9ROBh1GsFkKiTH7CU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"
+            alt="Druk na koszulkach"
+            class="serv-nav-png"
+            width="128px"
+          />
+          <h3 class="serv-nav-item-title">Druk na koszulkach</h3>
+        </a>
+      </li>
+
+      <li class="serv-nav-list-item">
+        <a
+          href="#"
+          class="serv-nav-item-anchor"
+          data-img="/img/services-nav/modal/uslugi-4.png"
+        >
+          <img
+            src="data:image/png;base64,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"
+            alt="Druk wielkoformatowy"
+            class="serv-nav-png"
+            width="128px"
+          />
+          <h3 class="serv-nav-item-title">Druk wielkoformatowy</h3>
+        </a>
+      </li>
+
+      <li class="serv-nav-list-item">
+        <a
+          href="#"
+          class="serv-nav-item-anchor"
+          data-img="/img/services-nav/modal/uslugi-5.png"
+        >
+          <img
+            src="/test--public/assets/usl-5-lAiol5eP.png"
+            alt="Dekoracja szyb"
+            class="serv-nav-png"
+            width="128px"
+          />
+          <h3 class="serv-nav-item-title">Dekoracja szyb</h3>
+        </a>
+      </li>
+
+      <li class="serv-nav-list-item">
+        <a
+          href="#"
+          class="serv-nav-item-anchor"
+          data-img="/img/services-nav/modal/uslugi-6.png"
+        >
+          <img
+            src="data:image/png;base64,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"
+            alt="3D litery"
+            class="serv-nav-png"
+            width="128px"
+          />
+          <h3 class="serv-nav-item-title-sp">3-D litery</h3>
+        </a>
+      </li>
+    </ul>
+
+    <div class="modal" id="modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modal-img" src="" alt="Modal Image" />
+    </div>
+
+    <div class="serv-nav-btn-center">
+      <a class="pomożemy-btn" target="_self" href="https://wa.me/48574665774">
+        <span class="kontakt-btn-text">Nie masz projektu? Pomożemy!</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+      <!-- <section id="services" class="services container">
+  <h2 class="serv-title">Nasze usługi</h2>
+  <ul class="serv-list">
+    <li class="serv-list-item">
+      <div class="serv-list-flex">
+        <img src="" alt="" class="serv-img" />
+        <div class="serv-content">
+          <h3 class="serv-item-title">Druk offsetowy</h3>
+          <p class="serv-item-text">
+            Wykonamy dowolną teksturę. Od realistycznego złota po czarny marmur.
+            Wysyłamy zamówienie w ciągu 2 dni. Prosty montaż, poradzi sobie
+            nawet dziecko.
+          </p>
+          <button type="button" class="serv-btn">Szczegóły</button>
+        </div>
+      </div>
+    </li>
+    <li class="serv-list-item">
+      <div class="serv-list-flex">
+        <img src="" alt="" class="serv-img" />
+        <div class="serv-content">
+          <h3 class="serv-item-title">Projektowanie graficzne</h3>
+          <p class="serv-item-text">
+            Gwarancja 2 lata, montaż na terenie całej Polski.
+          </p>
+          <button type="button" class="serv-btn">Szczegóły</button>
+        </div>
+      </div>
+    </li>
+    <li class="serv-list-item">
+      <div class="serv-list-flex">
+        <img src="" alt="" class="serv-img" />
+        <div class="serv-content">
+          <h3 class="serv-item-title">Druk na koszulkach</h3>
+          <p class="serv-item-text">
+            Unikalne, dowolne rozmiary, indywidualne podejście.
+          </p>
+          <button type="button" class="serv-btn">Szczegóły</button>
+        </div>
+      </div>
+    </li>
+    <li class="serv-list-item">
+      <div class="serv-list-flex">
+        <img src="" alt="" class="serv-img" />
+        <div class="serv-content">
+          <h3 class="serv-item-title">Druk wielkoformatowy</h3>
+          <p class="serv-item-text">Get a Fresh, Modern & Colorful Twister</p>
+          <button type="button" class="serv-btn">Szczegóły</button>
+        </div>
+      </div>
+    </li>
+    <li class="serv-list-item">
+      <div class="serv-list-flex">
+        <img src="" alt="" class="serv-img" />
+        <div class="serv-content">
+          <h3 class="serv-item-title">Dekoracja szyb</h3>
+          <p class="serv-item-text">Get a Fresh, Modern & Colorful Twister</p>
+          <button type="button" class="serv-btn">Szczegóły</button>
+        </div>
+      </div>
+    </li>
+    <li class="serv-list-item">
+      <div class="serv-list-flex">
+        <img src="" alt="" class="serv-img" />
+        <div class="serv-content">
+          <h3 class="serv-item-title">3D litery</h3>
+          <p class="serv-item-text">Get a Fresh, Modern & Colorful Twister</p>
+          <button type="button" class="serv-btn">Szczegóły</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section> -->
+
+      <section class="how-to container">
+  <div class="how-to-main">
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL0AAACPCAMAAACYuyqkAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAG1BMVEVHcEwhISEhISEhISEhISEhISEhISEhISEhISFHBNrtAAAACHRSTlMAFClEaoyktv172twAAAOnSURBVHja7Z0LahxJEES78hdx/xMv7MIWGJvBynkg2coDhB4vs7Knm6b1fNcfU6Ug43vA8JSsBNXYExT7yLZVnBobsnNa/q/UmBrKTsv/l4aNb6SrtybePvCm8GPkH0pJDM1t7iG6ekvFxufbzRDtLdnG7LRsLj/m1/FnL17+dRWh5taafmSQPkfm6FM2SN+yMfrTMkgfI3P0KRukr5fxOkxb9xvzzOv4AtsqJdlXTZBt7QftayHpVzzZ1wkyvdFtoEaXQbFTk2C6JqCL9/7Gh52aWPQVT98PJbyGk4UPMn3iQU8Um35Wvw3QCyCaHmMqnleT6Do4468Ln/Cm/MPh8yv/sikUvr/hv+F/G97zpeEPCt8ovFB4DwufKLwOCl8sfHJXWH4qi4T3fFb4kNGpRN0cmZzKWrrZw7s3jSXnZow1lnfT7NyMybmpz+CG3JUe2A06laqVG+6hWduva9Chd6GNVaJudMi5caNz42LdBOpm0Llxo25cCzeg+mTVt1H1g6pPmVw4JXThjMnOhtDOltDOttHOjsnOptDOltH4NtnZIzQ+ZXIbl9H4Zjs7aHzAnfU+fq/eiap3oodKhzxUVpCHysN2dtjO9qKzGH0KPVVpVE6bo+fjZXInHKH0aZQ+jdKXbwFvRjdLPyz9oPQhlD6E0pdR+jJK35+HHp1LBxtf5Dq2k43vxTpm5IRR+voAPRQ/4KHl5ehwp4qX4+ToeTkubifwcjzgTuDlKLiFyctxcTuBl+NB6V0svYKj5+W4iX18K1l6HTR+WHoX6l7J0uug8cPSu0n3VrL0CjR+WHoP6d4qZt/ffFSOEqW3EnRvD0vvAdx/6AXnYzS/bHI0j9D8NIs/aH74Q6VE6a0CW2tPbrfCHv/Koa6JZRS/bXJ40ih+s/FxJ5NYnGUWfxb5c3Zy9nbai1KCcqwJprfXDynHKqa3108u5Oz1jw3qD6HxT3lbQ8qxCrXjYuXkYnS29EcsfbHx7V3pPKidWLxdtL+T67UccjJ7s/L3ckoo/dNs/Cx3AilftXuvbv9Dv7RK5+RrgryDm7O+idg/e0mR6U+JfTRSQp8JDtLXWy1A/OKKeMWv9ey/JBkijuutM4j4i4+IvzXa3VG9xt+r2c++VIvvrgFq7uYhzFw7hJpbKb0Iv+wLOwD79QOw3+kh2G+d1otw5vPkuvO+5dfP0M/zloqWfoJ+zbzlL+hGay76Oyp/iO983l0nq7q7Mh6iIqv/jT9/438V+gdPc2dmuRK4ygAAAABJRU5ErkJggg=="
+      alt="backtips image"
+      class="backtips"
+      width="64px"
+    />
+    <p class="before-title">Wybór profesjonalnej drukarni</p>
+    <h2 class="how-to-title">
+      <span class="how-to-first">Czynniki,</span> <br />
+      które warto <br />
+      wziąć pod uwagę przy zamawianiu materiałów reklamowych
+    </h2>
+    <div class="how-to-content">
+      <div class="approach">
+        <p class="approach-text">
+          — Nasze podejście to połączenie wysokiego profesjonalizmu i
+          kompleksowych rozwiązań dla Twojego biznesu. Oferujemy pełen zakres
+          usług w jednym miejscu, oszczędzając Twój czas i eliminując zbędne
+          formalności.
+        </p>
+        <div class="serv-nav-btn-center">
+          <a
+            class="how-to-skontaktuj-btn"
+            target="_self"
+            href="https://wa.me/48574665774"
+          >
+            <span class="kontakt-btn-text">Skontaktuj się z nami teraz</span>
+          </a>
+        </div>
+      </div>
+      <div class="approach-list">
+        <ul class="our-app-list">
+          <li class="our-app-list-item">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABUCAMAAADJafuKAAAACXBIWXMAAAsSAAALEgHS3X78AAAAIVBMVEVHcEz///////////////////////////////////////+PBM77AAAACnRSTlMAgEDAFmbWqpAws8CibwAAAYBJREFUeNrt2dFqhDAQheEzM2eSeN7/gQtBllVqZNvQLm2+Sxl/Y0AIiCv0e3iR694vNtM6wiXHiEmAW5cYCXXem6Fr1pumLlbzQotuwxaxtbiWGQFkdA0/yO07nDhj1XdVx4Fphko8sGiS7ZCcHK2aiD2Zmqn2pubyfZmzF1o1GQDN5tg0W8I1m63maq7mav7PZrEXldtmIV7Ecm5CR45PUAJYo274hOtcKOcrbmYJWrqZmQP0VNsH+ThVMg3oo6cmgXZumqSAK2x/E9d+GG9F/jgMeQjYR58VABw3K0ALJep+9waUUTP7U4fNsu9YlRKpWglq0Ozz4LApB4CiPl1EADZqOjofNgMAmNEIbARADZoNuxw1lTiqg2bFg4+a2vAsdd1MPGEbNA+jTZfNII6Y9bKpSqDzootmGHHj2JTC3L0V6dAcGDRPVnM1V3M1/3SzkVnmNhMAOLeJzmY2A53PbBZ0+fb7KSO8rO9oNb/YpI/wK03FmPQO/6Ro9y5u/QCJVZt2JDlaKgAAAABJRU5ErkJggg=="
+              alt="Kompleksowe podejście"
+              class="adv-icon"
+              width="120px"
+            />
+            <h3 class="our-app-list-item-title">Druk najwyższej jakości</h3>
+            <p class="our-app-list-item-text">
+              Nowoczesne technologie i najlepsze materiały dla perfekcyjnego
+              efektu.
+            </p>
+          </li>
+          <li class="our-app-list-item">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABJCAMAAAC+TQAZAAAACXBIWXMAAAsSAAALEgHS3X78AAAAKlBMVEVHcEz///////////////////////////////////////////////////+LBpLMAAAADXRSTlMAFfCHQFnA0DDgoLBwpNeEpAAAAi5JREFUeNqll1u2wyAIRUHBN/Of7r39CSsFE7X7KyttjvJWeKGllAr8hPwT4RykIf9kKnBCGT2IkiNvLj+qGEKjdYEYxCcxLKECDivhKVkeeY9PlFcywgPYZYFQHhSyLBH4WEEh8FGFU1uabBAQLCxbJDBgEMNmfnTZBeEO3Qyt4tPrgylJlDoptFSA5pGlbzMxmrwmAExzjzbn77d3lVXW9Qa6RV2uNUMEz7j4khMNAajKh4gAXMVQnyKqX8Y4Li1DgQvxCRHhAyXxGSYenghTTDKjXxJDDqmm2+3zlZpKHsQmhGkQN+tPX2I4fTSQNjaT45y+FNgLNfnNMacIUExeejnb5tGL9hV75UtwUc2SRoK8uQRKMhKYjyW0lxNlP2khe9aF23qETmpVz3NpUtST7Ixe/Fgbvb+cKXJVuNtH9TEBlNDQurkAcJ63rWB/6s4YLeElh5Sm/fhZo5gEMAovGgEUsgorGh1AeVVQDeMKU9cZID4eK3gymPV9BH0O5kEyQhJdzR1nKatJl0WoLsgxmGpSS+ZVXIDfDxgshqwVHHhMh4hSZRcG5Wwc1d+Pa2PvAF+DlyEL22jQTVBNnT9uo2tQGdj3xEtQcsm6ZjThcKHj47PStw/x54EdYPHTfKbYl2937dpVvGlXhCf6rVLr5f+xcLuzI6yyPsdq5varxnuBnmswLIBp+4a6UbS1wCocxKMjrINRDJVgD2z3nWSGfZBbvQ7PCKcU+vD8/R9s8o6qyJ9zEAAAAABJRU5ErkJggg=="
+              alt="Kompleksowe podejście"
+              class="adv-icon"
+              width="120px"
+            />
+            <h3 class="our-app-list-item-title">
+              Indywidualne podejście do każdego klienta
+            </h3>
+            <p class="our-app-list-item-text">
+              Rozumiemy potrzeby i dopasowujemy rozwiązania.
+            </p>
+          </li>
+          <li class="our-app-list-item">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAA+CAMAAACr3TNIAAAACXBIWXMAAAsSAAALEgHS3X78AAAAJFBMVEVHcEz///////////////////////////////////////////8Uel1nAAAAC3RSTlMAEzBAUGWBo8DX8BDy8TgAAAGESURBVHja7dTRbsMgDIXhY8AGc97/fSfN6hQvShrY1aSeu7b6fkgrFYdJ/T0srZJ5Bgj2fQeUuuuDk7rpR3BSt7xL8Ais+cw5y5oPXsjFQD2CMrkaqMw8BVZ88IVA9hp8OVATXw/UxJcD4XvwnUBNfD1Qb3jM5d67SPCtgKiI8zDvZtb9cQCJe0WseQo85B0QtWEqQE+Bp9wYs4vAPRc/ipECbzkLOkm3Zh41psA73lFJKpo1WORy4J5T0UktTtKLkQZlDtxyVjgd8aZjcpz/3NMG8wSkvUjpnOGvAp08n2/l5S2dnwKJ5+fvP/cf8fynwCXnQCMljApZ4DwHEs8TTLqY002cDiHP65ecCiO9AWgery4CbcQm014nDpKcgsm0OWLt8hfUw8XO395AWvL5AnG8L3tW9HT8qh+QmY5f9FRYOn7Ve1zARXzLU6GMa2z5ePABmZuehho/w6anoKFw34/4YNuzQfkXP2Xu+9jH3/oyYnPJz29jACr3Nz7+33ux/SnwBX2BaJn2NDkzAAAAAElFTkSuQmCC"
+              alt="Kompleksowe podejście"
+              class="adv-icon"
+              width="120px"
+            />
+            <h3 class="our-app-list-item-title">
+              Kompleksowe usługi w jednym miejscu
+            </h3>
+            <p class="our-app-list-item-text">
+              Od projektu po gotowy produkt - zajmujemy się wszystkim.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <img src="" alt="sertificate of quality" class="sertificate" /> -->
+  </div>
+</section>
+
+      <!-- <section class="reviews container">
+  <h2 class="rev-main-title">Reviews from our customers</h2>
+  <div class="rev-flex">
+    <ul class="rev-list">
+      <li class="rev list-item">
+        <div class="rev-content">
+          <p class="rev-text">
+            Niesamowita jakość druku i szybka dostawa! Gorąco polecam BigFish do
+            wszystkich potrzeb drukowania.
+          </p>
+          <div class="rev-person">
+            <div class="rev-person-details">
+              <img src="" alt="" />
+              <div class="rev-person-name">
+                <h3 class="rev-person-name-surname">Anna Kowalska</h3>
+                <p class="rev-person-name-city">Warsaw</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="rev list-item">
+        <div class="rev-content">
+          <p class="rev-text">
+            Profesjonalna obsługa i świetna komunikacja. Jestem bardzo
+            zadowolony z finalnego produktu.
+          </p>
+          <div class="rev-person">
+            <div class="rev-person-details">
+              <img src="" alt="" />
+              <div class="rev-person-name">
+                <h3 class="rev-person-name-surname">Piotr Nowak</h3>
+                <p class="rev-person-name-city">Kraków</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="rev list-item">
+        <div class="rev-content">
+          <p class="rev-text">
+            BigFish pomógł mi z zamówieniem niestandardowym. Wszystko było
+            idealne od początku do końca!
+          </p>
+          <div class="rev-person">
+            <div class="rev-person-details">
+              <img src="" alt="" />
+              <div class="rev-person-name">
+                <h3 class="rev-person-name-surname">Magdalena Zielińska</h3>
+                <p class="rev-person-name-city">Gdańsk</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section> -->
+
+    </main>
+
+    <!-- <footer class="footer container">
+  <div class="footer-box">
+    <p class="map">mapa</p>
+    <div class="footer-content">
+      <div class="foot-cont-row">
+        <div class="logo-social">
+          <p>logo</p>
+          <ul class="foot-soc-links">
+            <li class="foot-soc-links-item">
+              <p>facebook</p>
+            </li>
+            <li class="foot-soc-links-item">
+              <p>youtube</p>
+            </li>
+            <li class="foot-soc-links-item">
+              <p>instagram</p>
+            </li>
+          </ul>
+        </div>
+        <div class="navigation">
+          <ul class="foot-nav-list">
+            <foot-nav-list-item>Druk offsetowy</foot-nav-list-item>
+            <foot-nav-list-item>Projektowanie graficzne</foot-nav-list-item>
+            <foot-nav-list-item>Druk na koszulkach</foot-nav-list-item>
+            <foot-nav-list-item>Druk wielkoformatowy</foot-nav-list-item>
+            <foot-nav-list-item>Dekoracja szyb</foot-nav-list-item>
+            <foot-nav-list-item>3D litery</foot-nav-list-item>
+          </ul>
+        </div>
+        <div class="foot-contacts">
+          <p class="foot-address">ul. Pawła Ślęczka 24, Zabrze 41-800</p>
+          <p class="foot-tel">+4857 46-65-774</p>
+          <button type="button">Skontaktuj</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+
+  </body>
+</html>
